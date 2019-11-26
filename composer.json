@@ -1,4 +1,18 @@
 {
+  "name": "mightycitizen/craft",
+  "type": "library",
+  "description": "Mighty Citizen Craft Standard Build",
+  "keywords": ["standard", "craftcms"],
+  "homepage": "https://www.mightycitizen.com",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Kristine Fernandez",
+      "author": "kfernandez@mightycitizen.com",
+      "homepage": "https://www.kristinefernandez.com",
+      "role": "developer"
+    }
+  ],
   "require": {
     "craftcms/cms": "^3.0.0",
     "vlucas/phpdotenv": "^3.4.0"
