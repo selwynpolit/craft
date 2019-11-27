@@ -56,14 +56,14 @@ function icons(done){
 // Delete the "dist" folder
 // This happens every time a build starts
 function clean(done) {
-  rimraf(PATHS.dist, done);
+  rimraf("web/" + PATHS.dist, done);
 }
 
 // Copy files out of the assets folder
 // This task skips over the "img", "js", and "scss" folders, which are parsed separately
 function copy() {
   return gulp.src(PATHS.assets)
-    .pipe(gulp.dest(PATHS.dist + '/assets'));
+    .pipe(gulp.dest("web/" + PATHS.dist + '/assets'));
 }
 
 // Compile Sass into CSS
@@ -87,7 +87,7 @@ function sass() {
     .pipe($.postcss(postCssPlugins))
     .pipe($.if(PRODUCTION, $.cleanCss({ compatibility: 'ie9' })))
     .pipe($.if(!PRODUCTION, $.sourcemaps.write()))
-    .pipe(gulp.dest(PATHS.dist + '/assets/css'))
+    .pipe(gulp.dest("web/" + PATHS.dist + '/assets/css'))
     .pipe(browser.reload({ stream: true }));
 }
 
@@ -121,7 +121,7 @@ function javascript() {
       .on('error', e => { console.log(e); })
     ))
     .pipe($.if(!PRODUCTION, $.sourcemaps.write()))
-    .pipe(gulp.dest(PATHS.dist + '/assets/js'));
+    .pipe(gulp.dest("web/" + PATHS.dist + '/assets/js'));
 }
 
 // Copy images to the "dist" folder
@@ -131,7 +131,7 @@ function images() {
     .pipe($.if(PRODUCTION, $.imagemin([
       $.imagemin.jpegtran({ progressive: true }),
     ])))
-    .pipe(gulp.dest(PATHS.dist + '/assets/img'));
+    .pipe(gulp.dest("web/" + PATHS.dist + '/assets/img'));
 }
 
 // Start a server with BrowserSync to preview the site in
