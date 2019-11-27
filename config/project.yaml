@@ -1,4 +1,4 @@
-dateModified: 1574876336
+dateModified: 1574876510
 email:
   fromEmail: kfernandez@mightycitizen.com
   fromName: test
@@ -169,7 +169,7 @@ volumes:
     handle: generalImages
     type: craft\volumes\Local
     hasUrls: true
-    url: $DEFAULT_SITE_URL/uploads/images/general
+    url: '@assetBaseUrl/images/general'
     settings:
       path: '@webroot/uploads/images/general'
     sortOrder: 1
