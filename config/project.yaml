@@ -1,4 +1,4 @@
-dateModified: 1574876510
+dateModified: 1574876612
 email:
   fromEmail: kfernandez@mightycitizen.com
   fromName: test
@@ -173,3 +173,12 @@ volumes:
     settings:
       path: '@webroot/uploads/images/general'
     sortOrder: 1
+  8d23ee0f-ba71-4778-9d39-bcf6e32131e8:
+    name: 'General Files'
+    handle: generalFiles
+    type: craft\volumes\Local
+    hasUrls: true
+    url: '@assetBaseUrl/files/general'
+    settings:
+      path: '@webroot/uploads/files/general'
+    sortOrder: 2
