@@ -26,6 +26,9 @@ const PRODUCTION = true;
 // Load settings from settings.yml
 const { COMPATIBILITY, PORT, UNCSS_OPTIONS, PATHS } = loadConfig();
 
+let ddevYmlFile = fs.readFileSync(__dirname + '/.ddev/config.yaml', 'utf8');
+const siteName = yaml.load(ddevYmlFile).name;
+
 function loadConfig() {
   let ymlFile = fs.readFileSync('config.yml', 'utf8');
   return yaml.load(ymlFile);
@@ -137,7 +140,7 @@ function images() {
 // Start a server with BrowserSync to preview the site in
 function server(done) {
   browser.init({
-    proxy: 'http://craft.ddev.site:8000'
+    proxy: 'http://' + siteName + '.ddev.site:8000'
   }, done);
 }
 
