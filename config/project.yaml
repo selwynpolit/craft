@@ -21,7 +21,7 @@ categoryGroups:
         hasUrls: true
         uriFormat: 'news/{slug}'
         template: ''
-dateModified: 1574878144
+dateModified: 1574881140
 email:
   fromEmail: kfernandez@mightycitizen.com
   fromName: test
@@ -400,7 +400,7 @@ sections:
         enabledByDefault: true
         hasUrls: true
         uriFormat: __home__
-        template: home.html
+        template: index
     entryTypes:
       659311ab-031f-4e42-9faa-c6bd84a33575:
         name: 'Homepage Content'
