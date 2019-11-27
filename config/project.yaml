@@ -1,3 +1,4 @@
+dateModified: 1574873351
 email:
   fromEmail: kfernandez@mightycitizen.com
   fromName: test
@@ -5,6 +6,31 @@ email:
 fieldGroups:
   2cb20e0e-99bc-4fa5-b4d0-57cf9a5c498f:
     name: Common
+plugins:
+  navigation:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.12
+  redactor:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.3.0
+  freeform:
+    edition: lite
+    enabled: true
+    schemaVersion: 3.0.4
+  redactor-anchors:
+    edition: standard
+    enabled: true
+    schemaVersion: '2.0'
+  redactor-custom-styles:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  seomatic:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.0.8
 siteGroups:
   6466cbd3-f560-449f-945c-40f34d244b8e:
     name: test
