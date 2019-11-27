@@ -1,4 +1,6 @@
 <?php
+define('BASEPATH', realpath(CRAFT_BASE_PATH));
+
 /**
  * General Configuration
  *
@@ -25,7 +27,8 @@ return [
 
         // Whether to save the project config out to config/project.yaml
         // (see https://docs.craftcms.com/v3/project-config.html)
-        'useProjectConfigFile' => true,
+        'useProjectConfigFile' => true
+
     ],
 
     // Dev environment settings
