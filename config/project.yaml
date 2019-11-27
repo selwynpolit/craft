@@ -1,4 +1,4 @@
-dateModified: 1574873351
+dateModified: 1574874443
 email:
   fromEmail: kfernandez@mightycitizen.com
   fromName: test
@@ -6,6 +6,109 @@ email:
 fieldGroups:
   2cb20e0e-99bc-4fa5-b4d0-57cf9a5c498f:
     name: Common
+  5a6a6616-c918-4b26-8ad4-71ee6f8cd580:
+    name: Pages
+  b589c852-0257-4348-8777-dd94a1737094:
+    name: Homepage
+fields:
+  78dfb89e-db9c-4bee-a62f-33dd5f8f0b69:
+    name: SEO
+    handle: seo
+    instructions: ''
+    searchable: true
+    translationMethod: none
+    translationKeyFormat: null
+    type: nystudio107\seomatic\fields\SeoSettings
+    settings:
+      elementDisplayPreviewType: google
+      generalTabEnabled: '1'
+      generalEnabledFields:
+        - seoPreview
+        - seoTitle
+        - seoDescription
+        - seoImage
+        - robots
+      twitterTabEnabled: '1'
+      twitterEnabledFields:
+        - seoPreview
+        - twitterTitle
+        - twitterDescription
+        - twitterImage
+      facebookTabEnabled: '1'
+      facebookEnabledFields:
+        - seoPreview
+        - ogTitle
+        - ogDescription
+        - ogImage
+      sitemapTabEnabled: '1'
+      sitemapEnabledFields:
+        - sitemapUrls
+    contentColumnType: text
+    fieldGroup: 2cb20e0e-99bc-4fa5-b4d0-57cf9a5c498f
+  e6c24483-b14a-4679-b8fa-38dc6f71a87e:
+    name: 'Content Modules'
+    handle: contentModules
+    instructions: ''
+    searchable: true
+    translationMethod: site
+    translationKeyFormat: null
+    type: craft\fields\Matrix
+    settings:
+      minBlocks: ''
+      maxBlocks: ''
+      contentTable: '{{%matrixcontent_contentmodules}}'
+      propagationMethod: all
+    contentColumnType: string
+    fieldGroup: 2cb20e0e-99bc-4fa5-b4d0-57cf9a5c498f
+matrixBlockTypes:
+  8d81649c-d68e-4fe6-83e5-03ff529f4192:
+    field: e6c24483-b14a-4679-b8fa-38dc6f71a87e
+    name: WYSIWYG
+    handle: wysiwyg
+    sortOrder: 1
+    fields:
+      a521feca-5eaa-4ac2-97f0-8da0da52d1e3:
+        name: Content
+        handle: wysiwyg
+        instructions: ''
+        searchable: true
+        translationMethod: none
+        translationKeyFormat: null
+        type: craft\redactor\Field
+        settings:
+          redactorConfig: Standard.json
+          purifierConfig: ''
+          cleanupHtml: true
+          removeInlineStyles: '1'
+          removeEmptyTags: '1'
+          removeNbsp: '1'
+          purifyHtml: '1'
+          columnType: text
+          availableVolumes: '*'
+          availableTransforms: '*'
+        contentColumnType: text
+        fieldGroup: null
+    fieldLayouts:
+      7c40ba78-949c-4bc9-a314-ee5f57f4f80f:
+        tabs:
+          -
+            name: Content
+            sortOrder: 1
+            fields:
+              a521feca-5eaa-4ac2-97f0-8da0da52d1e3:
+                required: true
+                sortOrder: 1
+navigation:
+  navs:
+    e66a9905-ee3e-4c61-9b93-d6c915ee743b:
+      name: 'Main Navigation'
+      handle: mainNavigation
+      structure:
+        uid: 7be4f330-7d84-4b2c-aea5-79d871530ca0
+        maxLevels: null
+      instructions: ''
+      propagateNodes: false
+      sortOrder: 1
 plugins:
   navigation:
     edition: standard
@@ -31,6 +134,10 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 3.0.8
+  super-table:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.2.1
 siteGroups:
   6466cbd3-f560-449f-945c-40f34d244b8e:
     name: test
