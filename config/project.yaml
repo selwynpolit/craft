@@ -1,4 +1,4 @@
-dateModified: 1574874443
+dateModified: 1574874868
 email:
   fromEmail: kfernandez@mightycitizen.com
   fromName: test
@@ -163,3 +163,13 @@ users:
   defaultGroup: null
   photoVolumeUid: null
   photoSubpath: ''
+volumes:
+  1ed10791-08f7-4dc3-ae5f-4bfeb9afa5ed:
+    name: 'General Images'
+    handle: generalImages
+    type: craft\volumes\Local
+    hasUrls: true
+    url: $DEFAULT_SITE_URL/uploads/images/general
+    settings:
+      path: $WEBSERVER_DOCROOT/uploads/images/general
+    sortOrder: 1
