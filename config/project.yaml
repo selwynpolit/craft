@@ -1,0 +1,32 @@
+email:
+  fromEmail: kfernandez@mightycitizen.com
+  fromName: test
+  transportType: craft\mail\transportadapters\Sendmail
+fieldGroups:
+  2cb20e0e-99bc-4fa5-b4d0-57cf9a5c498f:
+    name: Common
+siteGroups:
+  6466cbd3-f560-449f-945c-40f34d244b8e:
+    name: test
+sites:
+  9443cb5a-4e98-4117-ba92-1e07daf95840:
+    baseUrl: $DEFAULT_SITE_URL
+    handle: default
+    hasUrls: true
+    language: en-US
+    name: test
+    primary: true
+    siteGroup: 6466cbd3-f560-449f-945c-40f34d244b8e
+    sortOrder: 1
+system:
+  edition: solo
+  name: test
+  live: true
+  schemaVersion: 3.3.3
+  timeZone: America/Los_Angeles
+users:
+  requireEmailVerification: true
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoVolumeUid: null
+  photoSubpath: ''
