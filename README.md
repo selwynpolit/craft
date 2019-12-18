@@ -4,7 +4,7 @@
 
 * Update name in `.ddev/config.yaml` (this will be used to generate the ddev url - and is also used for the frontend Browsersync integration)
 * Run `setup.sh` - this is automating the following:
-  * Pulling the frontend repository files as a submodule
+  * Pulling the [frontend repository files](https://github.com/mightyfernandez/frontend) as a submodule
   * Moving these frontend files to the root so that we can run commands from the root
   * Removing the Craft and frontend `.git` directories from the project directory
   * Installing composer dependencies for Craft and node modules for frontend
