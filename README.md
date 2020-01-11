@@ -10,6 +10,8 @@
   * Installing composer dependencies for Craft and node modules for frontend
   * Creating directories needed for Craft that are created during a normal Craft installation but are excluded within the `.gitignore`
   * Running ddev and importing the db with preconfigured sections and content
+* Update site url in `.env` (FUTURE TODO: pull this from the .ddev/config.yaml file in the setup process)
+
 
 ## Development
 
