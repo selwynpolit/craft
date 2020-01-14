@@ -19,3 +19,10 @@
 
 * Once everything is installed, run `npm start` to start the frontend compile processes
 * For SVG icons that need to be compiled for use with gulpicon, run `gulp icons` at the root
+
+## Credentials
+
+*IMPORTANT!* change these credentials before pushing to a remote environment
+
+* Username: admin
+* Password: testtest
